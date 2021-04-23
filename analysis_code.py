@@ -38,14 +38,14 @@ count = -90 + (grid_size / 2)
 stnMeta['latgrid'] = 0
 
 for x in range(-90, 90, 5):
-    stnMeta['latgrid'][stnMeta['lat'].between(x, x + 5)] = count
+    stnMeta.loc[stnMeta['lat'].between(x, x+5), 'latgrid'] = count
     count = count + grid_size
 
 count = -180 + (grid_size / 2)
 stnMeta['longrid'] = 0
 
 for x in range(-180, 180, 5):
-    stnMeta['longrid'][stnMeta['lon'].between(x, x + 5)] = count
+    stnMeta.loc[stnMeta['lon'].between(x, x+5), 'longrid'] = count
     count = count + grid_size
 
 stnMeta['gridbox'] = stnMeta['latgrid'].map(str) + " lat " + stnMeta['longrid'].map(str) + " lon"
@@ -80,7 +80,7 @@ ghcnAnomsGrid = ghcnAnomsGrid[ghcnAnomsGrid.anomalies.notnull()]
 ghcnAnomsGrid = ghcnAnomsGrid.drop(columns=['baseline', 'lat', 'lon', 'elev', 'latgrid', 'longrid', 'land_percent',
                                             'ocean_percent', 'value'])
 ghcnAnomsGrid = ghcnAnomsGrid.groupby(['gridbox', 'variable', 'year']).mean().reset_index()
-print(ghcnAnomsGrid.columns.tolist())
+
 
 
 def weighted_average(group):
