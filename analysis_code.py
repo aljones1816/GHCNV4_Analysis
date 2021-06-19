@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as nm
-import matplotlib.pyplot as plt
 import urllib.request
 import tarfile
 import glob
@@ -80,10 +79,20 @@ stnMetaGrid['grid_weight'] = nm.sin((stnMetaGrid['latgrid'] + grid_size / 2) * n
 stnMetaGrid['grid_weight'] = stnMetaGrid['grid_weight'] * stnMetaGrid['land_percent']
 
 # clean ghcn and create anomalies
-ghcnv4NoNullYears = ghcnv4[ghcnv4.year.notnull()]
-ghcnv4NoNullYears = ghcnv4NoNullYears.replace(-9999, None)
+
+
+
+ghcnv4NoNullYears =  ghcnv4.replace(-9999, nm.nan)
+
+test0 = ghcnv4[ghcnv4['year'].between(2020, 2022)]
+test1 = ghcnv4NoNullYears[ghcnv4NoNullYears['year'].between(2020, 2022)]
+
 for m in range(1, 13):
     ghcnv4NoNullYears['VALUE' + str(m)] = ghcnv4NoNullYears['VALUE' + str(m)] / 100
+ghcnv4NoNullYears = ghcnv4NoNullYears[ghcnv4NoNullYears.year.notnull()]
+
+
+test2 = ghcnv4NoNullYears[ghcnv4NoNullYears['year'].between(2021, 2022)]
 
 ghcnlong = ghcnv4NoNullYears.set_index('station')
 ghcnlong = ghcnlong.reset_index()
@@ -117,9 +126,5 @@ def weighted_average(group):
 ghcnAnomsWtd = ghcnAnomsGrid.groupby(['variable', 'year']).apply(func=weighted_average).reset_index()
 ghcnAnomsWtd.columns.values[2] = "anomalies"
 
-simpleTemp = ghcnAnomsWtd.groupby('year').mean('anomalies').reset_index()
-simpleTemp = simpleTemp[simpleTemp['year'].between(1900, 2020)]
 
-# plot temperature record
-plt.plot(simpleTemp['year'], simpleTemp['anomalies'])
-plt.show()
+
