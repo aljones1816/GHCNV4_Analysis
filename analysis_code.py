@@ -1,6 +1,15 @@
 import pandas as pd
 import numpy as nm
 import matplotlib.pyplot as plt
+import urllib.request
+import tarfile
+
+ghcnurl = 'https://www1.ncdc.noaa.gov/pub/data/ghcn/v4/ghcnm.tavg.latest.qcu.tar.gz'
+target_path = 'C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data'
+
+ftpstream = urllib.request.urlopen(ghcnurl)
+ghcnurl = tarfile.open(fileobj=ftpstream, mode="r|gz")
+ghcnurl.extractall()
 
 GHCNDat = "C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data/ghcnm.tavg.v4.0.1.20210416.qcu.dat"
 GHCNmeta = "C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data/ghcnm.tavg.v4.0.1.20210416.qcu.inv"
