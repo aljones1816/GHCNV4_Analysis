@@ -5,6 +5,15 @@ import urllib.request
 import tarfile
 import glob
 from google_drive_downloader import GoogleDriveDownloader as gdd
+import shutil
+
+dirList = glob.glob('ghcnm*')
+
+for filePath in dirList:
+    try:
+        shutil.rmtree(dirList[0])
+    except:
+        print("Error while deleting file : ", filePath)
 
 #Data downloads to current folder
 ghcnurl = 'https://www1.ncdc.noaa.gov/pub/data/ghcn/v4/ghcnm.tavg.latest.qcu.tar.gz'
