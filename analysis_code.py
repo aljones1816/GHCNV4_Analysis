@@ -3,17 +3,24 @@ import numpy as nm
 import matplotlib.pyplot as plt
 import urllib.request
 import tarfile
+import glob
+from google_drive_downloader import GoogleDriveDownloader as gdd
 
+#Data downloads to current folder
 ghcnurl = 'https://www1.ncdc.noaa.gov/pub/data/ghcn/v4/ghcnm.tavg.latest.qcu.tar.gz'
-target_path = 'C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data'
-
 ftpstream = urllib.request.urlopen(ghcnurl)
 ghcnurl = tarfile.open(fileobj=ftpstream, mode="r|gz")
 ghcnurl.extractall()
 
-GHCNDat = "C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data/ghcnm.tavg.v4.0.1.20210416.qcu.dat"
-GHCNmeta = "C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data/ghcnm.tavg.v4.0.1.20210416.qcu.inv"
-landmask = "C:/Users/ALAJON/Desktop/Climate Science/GHCNV4 Data/landmask.dta"
+gdd.download_file_from_google_drive(file_id='1nSDlTfMbyquCQflAvScLM6K4dvgQ7JBj',
+                                    dest_path='./landmask.dta',
+                                    unzip=False)
+
+name = glob.glob('ghcnm*')
+
+GHCNDat = glob.glob(name[0] + "/*.dat")
+GHCNmeta = glob.glob(name[0] + "/*.inv")
+landmask = "./landmask.dta"
 
 # load the GHCNV4 monthly with column names
 colspecs = [(0, 2), (0, 11), (11, 15), (15, 19)]
@@ -29,14 +36,14 @@ for m in range(1, 13):
 
     i = i + 8
 
-ghcnv4 = pd.read_fwf(GHCNDat,
+ghcnv4 = pd.read_fwf(GHCNDat[0],
                      colspecs=colspecs, names=names)
 
 # load landmask
 lndmsk = pd.read_stata(landmask)
 
 # Load station metadata
-stnMeta = pd.read_fwf(GHCNmeta, colspecs=[(0, 2), (0, 12), (12, 21), (21, 31),
+stnMeta = pd.read_fwf(GHCNmeta[0], colspecs=[(0, 2), (0, 12), (12, 21), (21, 31),
                                           (31, 38), (38, 69)],
                       names=['country_code', 'station',
                              'lat', 'lon', 'elev', 'name'])
