@@ -9,6 +9,12 @@ Users will need to download the GHCNV4 monthly station data from [here](https://
 
 And will need a land mask file, the one I used is [here](https://drive.google.com/file/d/1nSDlTfMbyquCQflAvScLM6K4dvgQ7JBj/view?usp=sharing).
 
+## To run the analysis
+
+1. Download the required datasets from GHCN/Dropbox
+2. Run pip3 install -r requirements.txt to install necessary dependencies
+3. Run the analysis.py script
+
 ## Overview
 This dataset is a global land average. The method I used is extremely simple (so I've called the dataset simpleTemp), and applies no adjustments or corrections to the raw data whatsoever. The basic outline is as follows:
 
@@ -22,8 +28,4 @@ Importantly, I have omitted any additional processing steps (adjustments), inclu
 - There is no homogenization applied.
 - There is no spatial interpolation for grid boxes that have no stations - these cells are simply absent from the dataset.
 
-To run the analysis:
 
-1. Download the required datasets from GHCN/Dropbox
-2. Run pip3 install -r requirements.txt to install necessary dependencies
-3. Run the analysis.py script
