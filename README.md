@@ -21,3 +21,9 @@ Importantly, I have omitted any additional processing steps (adjustments), inclu
 - There is no correction made for time of observation bias.
 - There is no homogenization applied.
 - There is no spatial interpolation for grid boxes that have no stations - these cells are simply absent from the dataset.
+
+To run the analysis:
+
+1. Download the required datasets from GHCN/Dropbox
+2. Run pip3 install -r requirements.txt to install necessary dependencies
+3. Run the analysis.py script
