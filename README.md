@@ -15,6 +15,8 @@ Users will also need a land mask file, the one I used is [here](https://drive.go
 2. Run pip3 install -r requirements.txt to install necessary dependencies
 3. Run the analysis.py script
 
+It is recommended that you run this code in a virtual environment to keep dependency management straightforward.
+
 ## Overview
 This dataset is a global land average. The method I used is extremely simple (so I've called the dataset simpleTemp), and applies no adjustments or corrections to the raw data whatsoever. The basic outline is as follows:
 
