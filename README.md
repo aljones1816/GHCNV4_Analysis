@@ -5,9 +5,9 @@ This simple program will take the GHCN V4 raw (quality controlled unadjusted) mo
 A comparison between SimpleTemp and other global temperature datasets from organizations like NASA and the UK's Met Office can be seen [here](https://i.imgur.com/TbtHeLB.png).
 
 ## Setup
-Users will need to download the GHCNV4 monthly station data from [here](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-monthly-version-4).
+Analysis uses the GHCNV4 monthly unadjusted station data. The script should now automatically download the dataset needed, but users can also access it [here](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-monthly-version-4).
 
-And will need a land mask file, the one I used is [here](https://drive.google.com/file/d/1nSDlTfMbyquCQflAvScLM6K4dvgQ7JBj/view?usp=sharing).
+Users will also need a land mask file, the one I used is [here](https://drive.google.com/file/d/1nSDlTfMbyquCQflAvScLM6K4dvgQ7JBj/view?usp=sharing).
 
 ## To run the analysis
 
