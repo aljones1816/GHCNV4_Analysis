@@ -26,7 +26,7 @@ This dataset is a global land average. The method I used is extremely simple (so
 
 Importantly, I have omitted any additional processing steps (adjustments), including:
 
-- There is no correction made for time of observation bias. This produces a very small bias for the whole globe, but is significant for regional changes, particularly in the contiguous US.
-- There is no homogenization applied. This means that urbanization bias and station moves are not accounted for. 
-- There is no spatial interpolation for grid boxes that have no stations - these cells are simply absent from the dataset. Mostly this means that the Arctic is under-sampled, and because the Arctic is one of the fastest warming regions on Earth, this produces a negative bias in the global trend. This approach is similar to that used by HadCRUT in versions below 5, and consequently my analysis is most similar to HadCRUT.
+- There is no correction made for time of observation bias. This produces a very small bias for the whole globe, but is significant for regional changes, particularly in the contiguous US, where the station network is particularly dense and transient.
+- There is no homogenization applied. This means that urbanization bias and station moves are not accounted for. This, again, only produces a slight bias for the global mean trend, but can be significant at the regional level.
+- There is no spatial interpolation for grid boxes that have no stations - these cells are simply absent from the dataset. As a result, the polar regions are under-sampled, and because the Arctic is one of the fastest warming regions on Earth, this produces a negative bias in the global trend. This approach is similar to that used by HadCRUT in versions below 5, and consequently my analysis is most similar to HadCRUT.
 
