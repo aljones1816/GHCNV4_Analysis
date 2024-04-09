@@ -14,17 +14,19 @@ def transform_giss_data():
     # Calculate the average of the 'Land_Only' column, grouping by year
     giss = giss.groupby('year').mean()
 
+    
+
     # Drop all columns except year and Land_Only, rename Land_Only to 'anomaly (deg C)'
     giss = giss.drop(columns=['Land+Ocean','Open_Ocean', 'Year+Month', 'Station'])
     giss = giss.rename(columns={'Land_Only': 'anomaly (deg C)'})
-
+    
     latest_year = pd.Timestamp.now().year-1
     # Retain only the data from 1900 to the latest year
     giss = giss.loc[1900:latest_year]
-
+    
     output_file_path = os.path.join('data', 'clean', 'giss_anomalies_clean.csv')
     # Save the data to a new csv file
-    giss.to_csv(output_file_path, index=False)
+    giss.to_csv(output_file_path)
 
 # If you want to keep the script runnable as a standalone for testing
 if __name__ == '__main__':

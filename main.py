@@ -20,11 +20,11 @@ def main():
     print("Cleaning and transforming GHCN raw data...")
     transform_ghcn_data()
     
-    # TODO: Step 3: Start the Flask server
-    #print("Starting Flask server...")
+    # Step 3: Start the Flask server
+    print("Starting Flask server...")
     
-    #from server import app
-    #app.run(debug=True)
+    from server import app
+    app.run(debug=False)
 
 if __name__ == "__main__":
     main()

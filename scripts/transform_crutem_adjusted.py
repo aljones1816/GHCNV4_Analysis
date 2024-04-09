@@ -26,8 +26,8 @@ def transform_crutem_data():
     # Retain only the data from 1900 to the latest year
     crutem = crutem.loc[crutem['year'].between(1900, latest_year)]
 
-    # Export the data to a new csv file in the cleaned directory, ignore index column
-    output_file_path = os.path.join('data', 'cleaned', 'crutem_anomalies_clean.csv')
+    # Export the data to a new csv file in the clean directory, ignore index column
+    output_file_path = os.path.join('data', 'clean', 'crutem_anomalies_clean.csv')
     crutem.to_csv(output_file_path, index=False)
 
 if __name__ == '__main__':
