@@ -2,3 +2,4 @@ venv/
 ghcnm**/
 landmask.dta
 .DS_Store
+data/
