@@ -1,8 +1,10 @@
 # GHCNV4_Analysis
 
-This simple program will take the GHCN V4 QCU (quality controlled unadjusted, or raw) monthly station data and generate a global, land-only mean temperature anomaly series using gridded anomalies. The results are output to a csv file for further analysis.
+This simple program downloads the latest GHCN V4 QCU (quality controlled unadjusted, or raw) monthly station data and generates an annual, global, land-only mean temperature anomaly series using gridded anomalies. The results are output to a csv file for further analysis. The program is written in Python and uses the Pandas library for data manipulation.
 
-A comparison between SimpleTemp and other global temperature datasets from organizations like NASA and the UK's Met Office can be seen [here](https://i.imgur.com/TbtHeLB.png).
+The program also downloads and cleans adjusted global land temperatue anomaly datasets from NASA GISS and the Climate Research Unit at the University of East Anglia, and outputs the results to csv files for comparison.
+
+Currently, a comparison between SimpleTemp and other global temperature datasets from organizations like NASA and the UK's Met Office can be seen [here](https://i.imgur.com/TbtHeLB.png). I plan to update the program with a simple data visualization dashboard to make it easier to compare the datasets.
 
 ## Setup
 
@@ -27,13 +29,13 @@ Install the required dependencies
 pip3 install -r requirements.txt
 ```
 
-## To run the analysis
+## To run the program
 
 ```bash
 python3 main.py
 ```
 
-## Overview
+## GHCN Analysis Overview
 
 This dataset is a global land average. The method I used is extremely simple (so I've called the dataset simpleTemp), and applies no adjustments or corrections to the raw data whatsoever. The basic outline is as follows:
 
