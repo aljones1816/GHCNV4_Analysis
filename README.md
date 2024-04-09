@@ -39,7 +39,7 @@ python3 main.py
 
 If you see something like the following in your terminal, then Flask is up and running!
 
-```shell
+```console
  * Running on http://
  Press CTRL+C to quit
 ```
