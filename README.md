@@ -1,5 +1,7 @@
 # GHCNV4_Analysis
 
+## About
+
 This simple program downloads the latest GHCN V4 QCU (quality controlled unadjusted, or raw) monthly station data and generates an annual, global, land-only mean temperature anomaly series using gridded anomalies. The results are output to a csv file for further analysis. The program is written in Python and uses the Pandas library for data manipulation.
 
 The program also downloads and cleans adjusted global land temperatue anomaly datasets from NASA GISS and the Climate Research Unit at the University of East Anglia, then generates a simple website to visualize the data using the chartjs library.
@@ -35,9 +37,16 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 
+If you see something like the following in your terminal, then Flask is up and running!
+
+```bash
+ * Running on http://
+ Press CTRL+C to quit
+```
+
 ## To access the dashboard
 
-Open your browser and navigate to the following URL:
+Once you confirm that the Flask server is running, open your browser and navigate to the following URL:
 
 http://127.0.0.1:5000
 
