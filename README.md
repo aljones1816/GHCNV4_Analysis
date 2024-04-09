@@ -2,9 +2,9 @@
 
 This simple program downloads the latest GHCN V4 QCU (quality controlled unadjusted, or raw) monthly station data and generates an annual, global, land-only mean temperature anomaly series using gridded anomalies. The results are output to a csv file for further analysis. The program is written in Python and uses the Pandas library for data manipulation.
 
-The program also downloads and cleans adjusted global land temperatue anomaly datasets from NASA GISS and the Climate Research Unit at the University of East Anglia, and outputs the results to csv files for comparison.
+The program also downloads and cleans adjusted global land temperatue anomaly datasets from NASA GISS and the Climate Research Unit at the University of East Anglia, then generates a simple website to visualize the data using the chartjs library.
 
-Currently, a comparison between SimpleTemp and other global temperature datasets from organizations like NASA and the UK's Met Office can be seen [here](https://i.imgur.com/TbtHeLB.png). I plan to update the program with a simple data visualization dashboard to make it easier to compare the datasets.
+The program is designed to be run from the command line and is intended to be run on a regular basis to keep the data up to date. It is also intended to be run in your local environment.
 
 ## Setup
 
@@ -34,6 +34,12 @@ pip3 install -r requirements.txt
 ```bash
 python3 main.py
 ```
+
+## To access the dashboard
+
+Open your browser and navigate to the following URL:
+
+http://127.0.0.1:5000
 
 ## GHCN Analysis Overview
 
