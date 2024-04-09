@@ -30,7 +30,7 @@ fetch(`/data`)
             tension: 0.1,
           },
           {
-            label: "GHCN",
+            label: "SimpleTempGHCN",
             data: ghcn,
             fill: false,
             borderColor: "rgb(54, 162, 235)",
