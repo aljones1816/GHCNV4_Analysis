@@ -16,11 +16,19 @@ pandas==2.2.1
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
 pytz==2024.1
-requests==2.31.0
+requests
 six==1.16.0
 soupsieve==2.5
 tqdm==4.66.2
 tzdata==2024.1
-urllib3==2.2.1
+urllib3
 Werkzeug==3.0.2
 zipp==3.18.1
+
+# Database and ORM
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9
+
+# Statistical analysis
+scipy
+

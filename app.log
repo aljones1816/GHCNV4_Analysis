@@ -1,0 +1,265 @@
+2025-07-22 11:01:19,829 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 11:01:19,829 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 11:01:19,847 - database - INFO - Database tables created successfully
+2025-07-22 11:01:19,847 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 11:01:19,847 - data_processor - INFO - Starting data download...
+2025-07-22 11:01:28,977 - data_processor - INFO - Data download completed successfully
+2025-07-22 11:01:28,988 - data_processor - INFO - Transforming GISS data...
+2025-07-22 11:01:29,014 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 11:01:29,014 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 11:01:29,015 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 11:01:29,027 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 11:01:29,027 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 11:01:29,028 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 11:01:45,791 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 11:01:45,791 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 11:01:45,792 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 11:01:45,793 - __main__ - INFO - Starting Flask web server...
+2025-07-22 11:01:50,996 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-07-22 11:01:50,996 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-22 11:01:50,999 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 11:01:51,717 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 11:01:51,718 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 11:01:51,728 - database - INFO - Database tables created successfully
+2025-07-22 11:01:51,728 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 11:01:51,728 - data_processor - INFO - Starting data download...
+2025-07-22 11:01:59,772 - data_processor - INFO - Data download completed successfully
+2025-07-22 11:01:59,783 - data_processor - INFO - Transforming GISS data...
+2025-07-22 11:01:59,809 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 11:01:59,809 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 11:01:59,810 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 11:01:59,823 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 11:01:59,823 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 11:01:59,824 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 11:02:16,079 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 11:02:16,080 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 11:02:16,081 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 11:02:16,081 - __main__ - INFO - Starting Flask web server...
+2025-07-22 11:02:16,144 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 11:02:16,159 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 11:04:03,777 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:04:03] "GET / HTTP/1.1" 200 -
+2025-07-22 11:04:03,797 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:04:03] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 11:04:04,259 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:04:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-22 11:04:04,266 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:04:04,267 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:04:04] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:38:07,525 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 11:38:07,526 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 11:38:07,538 - database - INFO - Database tables created successfully
+2025-07-22 11:38:07,538 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 11:38:07,538 - data_processor - INFO - Starting data download...
+2025-07-22 11:38:16,716 - data_processor - INFO - Data download completed successfully
+2025-07-22 11:38:16,726 - data_processor - INFO - Transforming GISS data...
+2025-07-22 11:38:16,753 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 11:38:16,754 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 11:38:16,755 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 11:38:16,767 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 11:38:16,767 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 11:38:16,769 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 11:38:33,046 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 11:38:33,046 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 11:38:33,047 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 11:38:33,048 - __main__ - INFO - Starting Flask web server...
+2025-07-22 11:38:38,127 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-07-22 11:38:38,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-22 11:38:38,130 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 11:38:38,819 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 11:38:38,819 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 11:38:38,830 - database - INFO - Database tables created successfully
+2025-07-22 11:38:38,830 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 11:38:38,830 - data_processor - INFO - Starting data download...
+2025-07-22 11:38:47,144 - data_processor - INFO - Data download completed successfully
+2025-07-22 11:38:47,154 - data_processor - INFO - Transforming GISS data...
+2025-07-22 11:38:47,179 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 11:38:47,179 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 11:38:47,180 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 11:38:47,194 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 11:38:47,194 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 11:38:47,195 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 11:39:03,457 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 11:39:03,457 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 11:39:03,458 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 11:39:03,459 - __main__ - INFO - Starting Flask web server...
+2025-07-22 11:39:03,521 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 11:39:03,536 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 11:39:19,053 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:39:19] "GET / HTTP/1.1" 200 -
+2025-07-22 11:39:19,093 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:39:19] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 11:39:19,504 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:39:19,505 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:39:19] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:42:26,832 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:42:26,832 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:42:26] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:42:36,864 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:42:36,864 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:42:36] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:42:46,526 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:42:46,527 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:42:46] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:43:53,391 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:43:53] "GET / HTTP/1.1" 200 -
+2025-07-22 11:43:53,438 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:43:53] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 11:43:53,457 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:43:53,458 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:43:53] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:46:59,800 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:46:59] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-07-22 11:56:45,061 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:56:45] "GET / HTTP/1.1" 200 -
+2025-07-22 11:56:45,105 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:56:45] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 11:56:45,122 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:56:45,123 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:56:45] "GET /data HTTP/1.1" 200 -
+2025-07-22 11:59:35,173 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:59:35] "GET / HTTP/1.1" 200 -
+2025-07-22 11:59:35,209 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:59:35] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 11:59:35,225 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 11:59:35,226 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 11:59:35] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:01:06,155 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:06] "GET / HTTP/1.1" 200 -
+2025-07-22 12:01:06,187 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:06] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 12:01:06,203 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:01:06,204 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:06] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:01:57,189 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:57] "GET / HTTP/1.1" 200 -
+2025-07-22 12:01:57,219 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:57] "GET /static/index.js HTTP/1.1" 200 -
+2025-07-22 12:01:57,235 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:01:57,237 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:01:57] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:03:39,977 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:03:39] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-07-22 12:04:06,920 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:04:06] "GET / HTTP/1.1" 200 -
+2025-07-22 12:04:06,948 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:04:06] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-07-22 12:04:06,962 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:04:06,963 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:04:06] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:19:25,265 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:19:25] "GET / HTTP/1.1" 200 -
+2025-07-22 12:19:25,306 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:19:25] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-07-22 12:19:25,325 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:19:25,326 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:19:25] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:29:43,032 - werkzeug - INFO -  * Detected change in '/Users/ajones2/Projects/GHCNV4_Analysis/server.py', reloading
+2025-07-22 12:29:43,108 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 12:29:43,905 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:29:43,905 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:29:43,916 - database - INFO - Database tables created successfully
+2025-07-22 12:29:43,916 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:29:43,916 - data_processor - INFO - Starting data download...
+2025-07-22 12:29:52,607 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:29:52,617 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:29:52,640 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:29:52,640 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:29:52,641 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:29:52,654 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:29:52,654 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:29:52,655 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:30:09,478 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:30:09,478 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:30:09,479 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:30:09,480 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:30:09,547 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 12:30:09,560 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 12:30:56,571 - werkzeug - INFO -  * Detected change in '/Users/ajones2/Projects/GHCNV4_Analysis/server.py', reloading
+2025-07-22 12:30:56,659 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 12:30:57,447 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:30:57,447 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:30:57,457 - database - INFO - Database tables created successfully
+2025-07-22 12:30:57,457 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:30:57,457 - data_processor - INFO - Starting data download...
+2025-07-22 12:31:05,644 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:31:05,656 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:31:05,679 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:31:05,679 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:31:05,682 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:31:05,694 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:31:05,694 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:31:05,695 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:31:22,339 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:31:22,339 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:31:22,340 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:31:22,342 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:31:22,408 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 12:31:22,421 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 12:34:09,836 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:34:09,836 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:34:09,909 - database - INFO - Database tables created successfully
+2025-07-22 12:34:09,910 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:34:09,910 - data_processor - INFO - Starting data download...
+2025-07-22 12:34:18,804 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:34:18,814 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:34:18,839 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:34:18,839 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:34:18,840 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:34:18,852 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:34:18,853 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:34:18,854 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:34:35,442 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:34:35,442 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:34:35,443 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:34:35,444 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:34:40,521 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-07-22 12:34:40,521 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-22 12:34:40,523 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 12:34:41,257 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:34:41,257 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:34:41,267 - database - INFO - Database tables created successfully
+2025-07-22 12:34:41,267 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:34:41,267 - data_processor - INFO - Starting data download...
+2025-07-22 12:34:50,655 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:34:50,665 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:34:50,688 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:34:50,688 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:34:50,690 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:34:50,702 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:34:50,702 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:34:50,703 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:35:07,173 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:35:07,173 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:35:07,174 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:35:07,175 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:35:07,237 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 12:35:07,251 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 12:35:25,897 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:35:25] "GET / HTTP/1.1" 200 -
+2025-07-22 12:35:25,946 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:35:25] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-07-22 12:35:25,965 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:35:25,967 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:35:25] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:35:40,732 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:35:40] "POST /analyze HTTP/1.1" 200 -
+2025-07-22 12:39:03,934 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:39:03,934 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:39:03,945 - database - INFO - Database tables created successfully
+2025-07-22 12:39:03,945 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:39:03,945 - data_processor - INFO - Starting data download...
+2025-07-22 12:39:12,157 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:39:12,169 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:39:12,194 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:39:12,194 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:12,195 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:39:12,207 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:39:12,207 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:12,208 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:39:28,351 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:39:28,351 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:28,352 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:39:28,353 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:39:33,435 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-07-22 12:39:33,436 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-22 12:39:33,438 - werkzeug - INFO -  * Restarting with stat
+2025-07-22 12:39:34,135 - __main__ - INFO - Starting GHCN Climate Analysis in development mode
+2025-07-22 12:39:34,135 - __main__ - INFO - Starting data processing pipeline...
+2025-07-22 12:39:34,146 - database - INFO - Database tables created successfully
+2025-07-22 12:39:34,146 - data_processor - INFO - Starting complete data processing pipeline
+2025-07-22 12:39:34,146 - data_processor - INFO - Starting data download...
+2025-07-22 12:39:42,102 - data_processor - INFO - Data download completed successfully
+2025-07-22 12:39:42,112 - data_processor - INFO - Transforming GISS data...
+2025-07-22 12:39:42,137 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 12:39:42,137 - data_processor - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:42,138 - data_processor - INFO - Transforming CRUTEM data...
+2025-07-22 12:39:42,150 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 12:39:42,150 - data_processor - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:42,151 - data_processor - INFO - Transforming GHCN data...
+2025-07-22 12:39:58,716 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 12:39:58,716 - data_processor - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 12:39:58,717 - data_processor - INFO - Complete data processing pipeline completed successfully
+2025-07-22 12:39:58,718 - __main__ - INFO - Starting Flask web server...
+2025-07-22 12:39:58,780 - werkzeug - WARNING -  * Debugger is active!
+2025-07-22 12:39:58,793 - werkzeug - INFO -  * Debugger PIN: 882-726-440
+2025-07-22 12:40:11,981 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:11] "GET / HTTP/1.1" 200 -
+2025-07-22 12:40:11,986 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:11] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-07-22 12:40:12,032 - server - INFO - Successfully retrieved data for 125 years
+2025-07-22 12:40:12,033 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:12] "GET /data HTTP/1.1" 200 -
+2025-07-22 12:40:19,764 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:19] "POST /analyze HTTP/1.1" 200 -
