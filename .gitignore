@@ -1,3 +1,5 @@
 venv/
 .DS_Store
 data/
+# Allow the pre-populated database in git (annual data is static)
+# climate_data.db

@@ -41,9 +41,9 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     """Production configuration."""
     DEBUG = False
-    # Use environment variables for sensitive production settings
-    DATABASE_URL = os.getenv('DATABASE_URL')
-    SECRET_KEY = os.getenv('SECRET_KEY')
+    # Use local SQLite database (pre-populated)
+    DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///climate_data.db')
+    SECRET_KEY = os.getenv('SECRET_KEY', 'production-secret-key-change-this')
     
     @classmethod
     def validate_production_config(cls):

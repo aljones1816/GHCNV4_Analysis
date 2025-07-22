@@ -263,3 +263,17 @@
 2025-07-22 12:40:12,032 - server - INFO - Successfully retrieved data for 125 years
 2025-07-22 12:40:12,033 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:12] "GET /data HTTP/1.1" 200 -
 2025-07-22 12:40:19,764 - werkzeug - INFO - 127.0.0.1 - - [22/Jul/2025 12:40:19] "POST /analyze HTTP/1.1" 200 -
+2025-07-22 14:08:08,089 - database - INFO - Database tables created successfully
+2025-07-22 14:08:08,089 - __main__ - INFO - Starting complete data processing pipeline
+2025-07-22 14:08:08,089 - __main__ - INFO - Starting data download...
+2025-07-22 14:09:48,539 - __main__ - INFO - Data download completed successfully
+2025-07-22 14:09:48,545 - __main__ - INFO - Transforming GISS data...
+2025-07-22 14:09:48,574 - database - INFO - Stored 125 records for dataset giss
+2025-07-22 14:09:48,574 - __main__ - INFO - GISS data transformation and storage completed successfully (125 records)
+2025-07-22 14:09:48,576 - __main__ - INFO - Transforming CRUTEM data...
+2025-07-22 14:09:48,589 - database - INFO - Stored 125 records for dataset crutem
+2025-07-22 14:09:48,589 - __main__ - INFO - CRUTEM data transformation and storage completed successfully (125 records)
+2025-07-22 14:09:48,590 - __main__ - INFO - Transforming GHCN data...
+2025-07-22 14:10:05,427 - database - INFO - Stored 125 records for dataset ghcn
+2025-07-22 14:10:05,428 - __main__ - INFO - GHCN data transformation and storage completed successfully (125 records)
+2025-07-22 14:10:05,429 - __main__ - INFO - Complete data processing pipeline completed successfully

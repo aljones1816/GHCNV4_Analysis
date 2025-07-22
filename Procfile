@@ -1,1 +1,1 @@
-web: python main.py --env production --skip-processing
+web: python main.py --env production
