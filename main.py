@@ -54,10 +54,12 @@ def main():
         
         try:
             from server import app
+            port = int(os.getenv('PORT', 5000))
+            logger.info(f"Starting Flask server on 0.0.0.0:{port}")
             app.run(
                 debug=config.DEBUG,
-                host='0.0.0.0',  # Allow external connections for AWS deployment
-                port=int(os.getenv('PORT', 5000))
+                host='0.0.0.0',
+                port=port
             )
         except KeyboardInterrupt:
             logger.info("Server stopped by user")

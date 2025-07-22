@@ -21,18 +21,52 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = config.SECRET_KEY
 
-# Initialize database
-db_manager = get_db_manager(config.DATABASE_URL)
+# Initialize database with error handling
+try:
+    db_manager = get_db_manager(config.DATABASE_URL)
+    logger.info("Database initialized successfully")
+except Exception as e:
+    logger.error(f"Database initialization failed: {e}")
+    # Create a dummy db_manager for health checks to work
+    db_manager = None
 
 @app.route('/')
 def index():
     """Render the main visualization page."""
     return render_template('index.html')
 
+@app.route('/health')
+def health():
+    """Simple health check endpoint for Railway."""
+    return jsonify({'status': 'healthy', 'message': 'Climate app is running'})
+
+@app.route('/process-data')
+def trigger_data_processing():
+    """Manually trigger data processing."""
+    try:
+        if db_manager is None:
+            return jsonify({'error': 'Database not initialized'}), 503
+            
+        from data_processor import DataProcessor
+        processor = DataProcessor()
+        success = processor.process_all()
+        
+        if success:
+            return jsonify({'status': 'success', 'message': 'Data processing completed'})
+        else:
+            return jsonify({'status': 'error', 'message': 'Data processing failed'}), 500
+            
+    except Exception as e:
+        logger.error(f"Error in data processing: {e}")
+        return jsonify({'error': f'Data processing failed: {str(e)}'}), 500
+
 @app.get('/data')
 def dataset():
     """Get climate data for visualization."""
     try:
+        if db_manager is None:
+            return jsonify({'error': 'Database not initialized', 'years': [], 'giss': [], 'crutem': [], 'ghcn': []}), 500
+            
         # Get data from database
         data = db_manager.get_climate_data(['giss', 'crutem', 'ghcn'])
 
@@ -56,6 +90,9 @@ def dataset():
 def processing_status():
     """Get the status of the most recent data processing run."""
     try:
+        if db_manager is None:
+            return jsonify({'message': 'Database not initialized'}), 503
+            
         status = db_manager.get_latest_processing_status()
         if status:
             return jsonify(status)
